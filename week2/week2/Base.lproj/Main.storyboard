@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQj-vN-C2x">
-                                <rect key="frame" x="10" y="56" width="30" height="25.5"/>
+                                <rect key="frame" x="20" y="66" width="30" height="25.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="B76-xC-Gym"/>
                                     <constraint firstAttribute="height" constant="30" id="V7Z-DT-unh"/>
@@ -119,8 +119,8 @@
                             <constraint firstItem="B17-93-WVd" firstAttribute="bottom" secondItem="h6R-C2-nzV" secondAttribute="bottom" constant="20" id="AJZ-BX-GfS"/>
                             <constraint firstAttribute="bottom" secondItem="X7W-lh-esM" secondAttribute="bottom" id="DaG-dn-Ahi"/>
                             <constraint firstItem="h6R-C2-nzV" firstAttribute="centerX" secondItem="SCE-Tc-skR" secondAttribute="centerX" id="Jcs-YD-Eki"/>
-                            <constraint firstItem="mQj-vN-C2x" firstAttribute="top" secondItem="B17-93-WVd" secondAttribute="top" constant="10" id="M7H-1B-c49"/>
-                            <constraint firstItem="mQj-vN-C2x" firstAttribute="leading" secondItem="B17-93-WVd" secondAttribute="leading" constant="10" id="SY2-GF-T2F"/>
+                            <constraint firstItem="mQj-vN-C2x" firstAttribute="top" secondItem="B17-93-WVd" secondAttribute="top" constant="20" id="M7H-1B-c49"/>
+                            <constraint firstItem="mQj-vN-C2x" firstAttribute="leading" secondItem="B17-93-WVd" secondAttribute="leading" constant="20" id="SY2-GF-T2F"/>
                             <constraint firstItem="X7W-lh-esM" firstAttribute="top" secondItem="SCE-Tc-skR" secondAttribute="top" id="Wg6-Qk-F2E"/>
                             <constraint firstItem="c9C-Mi-FB2" firstAttribute="top" secondItem="62D-I6-QiB" secondAttribute="bottom" constant="10" id="cJI-R7-xLp"/>
                             <constraint firstItem="h6R-C2-nzV" firstAttribute="top" secondItem="c9C-Mi-FB2" secondAttribute="bottom" constant="30" id="gHf-xE-BBu"/>

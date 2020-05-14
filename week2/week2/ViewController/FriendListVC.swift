@@ -79,7 +79,7 @@ extension FriendListVC : UITableViewDataSource, UITableViewDelegate{
             headerView.layer.addBorder([.bottom], color: .white, width: 1)
             print("top")
         }else{
-            headerView.layer.addBorder([.bottom], color: .gray, width: 1)
+            headerView.layer.addBorder([.bottom], color: .lightGray, width: 1)
             print("not top")
         }
         
@@ -143,7 +143,6 @@ extension CALayer {
     }
 }
 extension FriendDetailVC {
-
     class  FriendData {
         var title: String? // Title for a row
         var content: [String]? // Content after row selection
