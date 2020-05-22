@@ -16,6 +16,10 @@
 		49901A52246F7DD30009D1E8 /* FriendListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49901A51246F7DD30009D1E8 /* FriendListTVC.swift */; };
 		49901A54246F80BA0009D1E8 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49901A53246F80BA0009D1E8 /* FriendData.swift */; };
 		49901A56246F848A0009D1E8 /* FriendDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49901A55246F848A0009D1E8 /* FriendDetailVC.swift */; };
+		83A5C4A02477CBB300389A0A /* AddFriendByIdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C49F2477CBB300389A0A /* AddFriendByIdVC.swift */; };
+		83A5C4A22477CCBF00389A0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A12477CCBF00389A0A /* Utils.swift */; };
+		83A5C4A42477CE7A00389A0A /* ChattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A32477CE7A00389A0A /* ChattingVC.swift */; };
+		83A5C4A62477D30100389A0A /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A52477D30100389A0A /* MyProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		49901A51246F7DD30009D1E8 /* FriendListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTVC.swift; sourceTree = "<group>"; };
 		49901A53246F80BA0009D1E8 /* FriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 		49901A55246F848A0009D1E8 /* FriendDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailVC.swift; sourceTree = "<group>"; };
+		83A5C49F2477CBB300389A0A /* AddFriendByIdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendByIdVC.swift; sourceTree = "<group>"; };
+		83A5C4A12477CCBF00389A0A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		83A5C4A32477CE7A00389A0A /* ChattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingVC.swift; sourceTree = "<group>"; };
+		83A5C4A52477D30100389A0A /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				49901A3F246F78C00009D1E8 /* Assets.xcassets */,
 				49901A41246F78C00009D1E8 /* LaunchScreen.storyboard */,
 				49901A44246F78C00009D1E8 /* Info.plist */,
+				83A5C4A12477CCBF00389A0A /* Utils.swift */,
 			);
 			path = "week2-practice";
 			sourceTree = "<group>";
@@ -96,6 +105,9 @@
 			children = (
 				49901A4D246F79500009D1E8 /* FriendListVC.swift */,
 				49901A55246F848A0009D1E8 /* FriendDetailVC.swift */,
+				83A5C49F2477CBB300389A0A /* AddFriendByIdVC.swift */,
+				83A5C4A32477CE7A00389A0A /* ChattingVC.swift */,
+				83A5C4A52477D30100389A0A /* MyProfileVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -173,10 +185,14 @@
 			files = (
 				49901A37246F78BE0009D1E8 /* AppDelegate.swift in Sources */,
 				49901A54246F80BA0009D1E8 /* FriendData.swift in Sources */,
+				83A5C4A62477D30100389A0A /* MyProfileVC.swift in Sources */,
 				49901A39246F78BE0009D1E8 /* SceneDelegate.swift in Sources */,
 				49901A56246F848A0009D1E8 /* FriendDetailVC.swift in Sources */,
+				83A5C4A02477CBB300389A0A /* AddFriendByIdVC.swift in Sources */,
 				49901A4E246F79500009D1E8 /* FriendListVC.swift in Sources */,
 				49901A52246F7DD30009D1E8 /* FriendListTVC.swift in Sources */,
+				83A5C4A42477CE7A00389A0A /* ChattingVC.swift in Sources */,
+				83A5C4A22477CCBF00389A0A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

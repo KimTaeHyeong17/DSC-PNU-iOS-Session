@@ -13,7 +13,9 @@ class FriendListVC: UIViewController {
     
     @IBOutlet weak var friendListTableView: UITableView!
     @IBOutlet weak var lbFriend: UILabel!
+    @IBOutlet var popupView: UIView!
     
+
     var friendArrayList = [FriendData]()
     
     override func viewDidLoad() {
@@ -22,11 +24,58 @@ class FriendListVC: UIViewController {
         setUpData()
     }
     
+    @IBAction func actionAddFriend(_ sender: Any) {
+        if popupView.isHidden == true{
+            popupView.isHidden = false
+        }else{
+            popupView.isHidden = true
+        }
+        print("press")
+    }
+    
+    @IBAction func actionPopupClose(_ sender: Any) {
+        popupView.isHidden = true
+    }
+    @IBAction func actionAddId(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AddFriendByIdVC") as! AddFriendByIdVC
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc,animated: true)
+    }
+    @IBAction func actionEditFriend(_ sender: Any) {
+        let alert = UIAlertController(title: "유의사항", message: "도착 예정시간에 맞춰 음식을 준비하므로 \n\"꼭\" 늦지않게 주의해주세요. \n※ 매장측에서 주문 접수가 시작되면 \n환불이 불가합니다." , preferredStyle: .actionSheet)
+        let OKAction = UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {
+            (_)in
+        })
+        let cancelAction = UIAlertAction(title: "취소", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            self.dismiss(animated: true, completion: nil)
+        })
+        let thirdAction = UIAlertAction(title: "확인(다시보지않기)", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            
+        })
+        alert.addAction(OKAction)
+        alert.addAction(thirdAction)
+        alert.addAction(cancelAction)
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func setupView(){
         friendListTableView.delegate = self
         friendListTableView.dataSource = self
         
         attributeText()
+        
+
+        popupView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(popupView)
+        popupView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        popupView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        popupView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        popupView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        popupView.isHidden = true
         
     }
     func attributeText(){
