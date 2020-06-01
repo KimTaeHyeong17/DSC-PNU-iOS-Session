@@ -20,6 +20,8 @@
 		83A5C4A22477CCBF00389A0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A12477CCBF00389A0A /* Utils.swift */; };
 		83A5C4A42477CE7A00389A0A /* ChattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A32477CE7A00389A0A /* ChattingVC.swift */; };
 		83A5C4A62477D30100389A0A /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5C4A52477D30100389A0A /* MyProfileVC.swift */; };
+		83AF984824850A4D004FBD86 /* SharpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF984724850A4D004FBD86 /* SharpVC.swift */; };
+		83AF984A24850B36004FBD86 /* SharpTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF984924850B36004FBD86 /* SharpTVC.swift */; };
 		C1CB399BC8A5AF96F2BA8E58 /* Pods_week2_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74BAF24C5AD24AF7E195764 /* Pods_week2_practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		83A5C4A12477CCBF00389A0A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		83A5C4A32477CE7A00389A0A /* ChattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingVC.swift; sourceTree = "<group>"; };
 		83A5C4A52477D30100389A0A /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		83AF984724850A4D004FBD86 /* SharpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpVC.swift; sourceTree = "<group>"; };
+		83AF984924850B36004FBD86 /* SharpTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTVC.swift; sourceTree = "<group>"; };
 		A6AA73C1F0A68926F21157DD /* Pods-week2-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-week2-practice.release.xcconfig"; path = "Target Support Files/Pods-week2-practice/Pods-week2-practice.release.xcconfig"; sourceTree = "<group>"; };
 		A8E4C67A4A38147EAB167871 /* Pods-week2-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-week2-practice.debug.xcconfig"; path = "Target Support Files/Pods-week2-practice/Pods-week2-practice.debug.xcconfig"; sourceTree = "<group>"; };
 		B74BAF24C5AD24AF7E195764 /* Pods_week2_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_week2_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				49901A51246F7DD30009D1E8 /* FriendListTVC.swift */,
+				83AF984924850B36004FBD86 /* SharpTVC.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				83A5C49F2477CBB300389A0A /* AddFriendByIdVC.swift */,
 				83A5C4A32477CE7A00389A0A /* ChattingVC.swift */,
 				83A5C4A52477D30100389A0A /* MyProfileVC.swift */,
+				83AF984724850A4D004FBD86 /* SharpVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF984824850A4D004FBD86 /* SharpVC.swift in Sources */,
 				49901A37246F78BE0009D1E8 /* AppDelegate.swift in Sources */,
 				49901A54246F80BA0009D1E8 /* FriendData.swift in Sources */,
 				83A5C4A62477D30100389A0A /* MyProfileVC.swift in Sources */,
@@ -258,6 +265,7 @@
 				49901A56246F848A0009D1E8 /* FriendDetailVC.swift in Sources */,
 				83A5C4A02477CBB300389A0A /* AddFriendByIdVC.swift in Sources */,
 				49901A4E246F79500009D1E8 /* FriendListVC.swift in Sources */,
+				83AF984A24850B36004FBD86 /* SharpTVC.swift in Sources */,
 				49901A52246F7DD30009D1E8 /* FriendListTVC.swift in Sources */,
 				83A5C4A42477CE7A00389A0A /* ChattingVC.swift in Sources */,
 				83A5C4A22477CCBF00389A0A /* Utils.swift in Sources */,

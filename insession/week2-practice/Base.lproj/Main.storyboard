@@ -504,21 +504,60 @@
             </objects>
             <point key="canvasLocation" x="887" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--SharpVC-->
         <scene sceneID="Zjs-Hu-KYs">
             <objects>
-                <viewController id="fRl-vf-jrU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SharpVC" id="fRl-vf-jrU" customClass="SharpVC" customModule="week2_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MqX-4r-nuu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-Zy-x9Y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SharpTVC" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SharpTVC" rowHeight="100" id="zjt-Vu-SRd" customClass="SharpTVC" customModule="week2_practice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zjt-Vu-SRd" id="i5x-jA-Akr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mF3-Xu-ESC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mF3-Xu-ESC" firstAttribute="leading" secondItem="i5x-jA-Akr" secondAttribute="leading" id="Rxg-ZM-I2z"/>
+                                                <constraint firstItem="mF3-Xu-ESC" firstAttribute="top" secondItem="i5x-jA-Akr" secondAttribute="top" id="ZxR-tw-I1x"/>
+                                                <constraint firstAttribute="bottom" secondItem="mF3-Xu-ESC" secondAttribute="bottom" id="mTe-nv-eOQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="mF3-Xu-ESC" secondAttribute="trailing" id="uwv-Y4-T7L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="testImageView" destination="mF3-Xu-ESC" id="e5t-Vt-sYr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bfX-Zy-x9Y" firstAttribute="leading" secondItem="DxE-ZD-Qeq" secondAttribute="leading" id="77O-1d-AyD"/>
+                            <constraint firstItem="bfX-Zy-x9Y" firstAttribute="top" secondItem="DxE-ZD-Qeq" secondAttribute="top" id="7Fc-pf-L6o"/>
+                            <constraint firstItem="DxE-ZD-Qeq" firstAttribute="bottom" secondItem="bfX-Zy-x9Y" secondAttribute="bottom" id="JHT-to-pzi"/>
+                            <constraint firstItem="bfX-Zy-x9Y" firstAttribute="trailing" secondItem="DxE-ZD-Qeq" secondAttribute="trailing" id="sIa-Xt-ovg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DxE-ZD-Qeq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="number" catalog="system" id="Wn1-NE-Efe"/>
+                    <connections>
+                        <outlet property="testTableView" destination="bfX-Zy-x9Y" id="OZy-b3-eu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ED-5i-rYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="90"/>
+            <point key="canvasLocation" x="1604.3478260869567" y="89.732142857142847"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hsR-Cd-HXF">

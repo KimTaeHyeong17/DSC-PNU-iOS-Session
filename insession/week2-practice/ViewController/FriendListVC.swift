@@ -176,6 +176,7 @@ extension FriendListVC : UITableViewDataSource, UITableViewDelegate{
 //        cell.imageView?.sd_setImage(with: url, placeholderImage: UIImage(named: ""))
         let imageresurce = ImageResource(downloadURL: url)
         cell.imageView!.kf.setImage(with: imageresurce)
+        
 //        cell.imageView!.kf.setImage(with: url, placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
         
         
